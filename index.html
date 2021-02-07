@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+        #gallery {
+            font-size: 0.75em;
+            width: 750px;
+            margin: 0 auto;
+        }
+        #gallery h1 {
+            font-weight: normal;
+        }
+        #image-container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-gap: 50px;
+            font-family: sans-serif;
+            margin: 25px 0;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        img {
+            border-radius: 8px 8px 0 0;
+            background-color: rgb(83, 128, 185);
+            flex-grow: 1;
+        }
+        .title {
+            text-align: center;
+            margin: 0;
+            padding: 5px 5px;
+            font-size: 0.75em;
+            background-color: rgba(180, 170, 170, 0.486);
+            border-radius: 0 0 8px 8px;
+        }
+        @media screen and (max-width: 768px) {
+            #image-container {
+                grid-template-columns: repeat(3, 100px);
+            }
+        #gallery  {
+            width: 400px;
+        }
+        }
+        @media screen and (max-width: 414px) {
+            #image-container {
+                grid-template-columns: auto;
+            }
+            #gallery {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+    <h1>Gallery Heading</h1>
+    <div id="image-container">
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    <div class="box">
+        <img src="placeholder-image.png" alt="">
+        <p class="title">Image Title</p>
+    </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ut nisi dolorem libero. Facilis dicta libero ex tenetur nam voluptates iste recusandae modi, eius doloremque autem iure quaerat dignissimos soluta vero, sint, ipsam totam quidem voluptatibus numquam nisi? Tenetur earum magnam quos veniam animi, minus beatae enim, necessitatibus facilis architecto, et itaque doloremque laudantium dolor pariatur blanditiis deleniti corporis cumque. Similique provident dignissimos ipsa laborum numquam mollitia, qui ab quos possimus repellendus, tenetur dolore ex officia pariatur quisquam hic quaerat reiciendis sit? Dolorum non laborum voluptatum dolore. Quos maiores, perferendis, nemo distinctio ea, quod dolorem odit odio earum porro molestias!</p>
+</div>
+</body>
+</html>
